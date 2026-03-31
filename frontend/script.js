@@ -11,12 +11,24 @@ let btn9 = document.getElementById("btn9");
 let btn0 = document.getElementById("btn0");
 let btndel = document.getElementById("btn-");
 let btnx = document.getElementById("btnx");
+let btnad = document.getElementById("btnplus");
+let btndiv = document.getElementById("btndiv");
+let btnmin = document.getElementById("btnmin");
 let text2 = document.querySelector(".Text2");
 let showoperator = document.querySelector(".showoperator");
+let btneq = document.getElementById("btneq");
+let answer = document.getElementById("answer");
+
 
 let firstnumber = "";
 let secondnumber = "";
 let operator = false;
+
+let x = false;
+let plus = false;
+let min = false;
+let div = false;
+
 
 btn1.onclick = function() {
     if (operator == false) {
@@ -113,13 +125,68 @@ btn0.onclick = function() {
 btnx.onclick = function() {
     operator = true;
     showoperator.textContent = "x";
+    x = true;
 
+}
+
+btnad.onclick = function() {
+    operator = true;
+    showoperator.textContent = "+";
+    plus = true;
+}
+
+btnmin.onclick = function() {
+    operator = true;
+    showoperator.textContent = "-";
+    min = true;
+}
+
+btndiv.onclick = function() {
+    operator = true;
+    showoperator.textContent = "÷";
+    div = true;
 }
 
 btndel.onclick = function() {
+   if (secondnumber == "") {
+    operator = false;
+   }
+    
+   if (secondnumber == "" && showoperator.textContent !== "") {
+    showoperator.textContent = "";
+    operator = false;
+   }
+    else if (operator == false) {
 firstnumber = firstnumber.slice(0, -1);
   text.textContent = firstnumber; 
+    } else {
+secondnumber = secondnumber.slice(0, -1);
+  text2.textContent = secondnumber; 
+    }
 }
+
+btneq.onclick = function() {
+    firstnumber = Number(firstnumber);
+    secondnumber = Number(secondnumber);
+  
+    if (x) {
+       answer.textContent = firstnumber * secondnumber;
+    }
+
+       if (plus) {
+       answer.textContent = firstnumber + secondnumber;
+    }
+       if (min) {
+       answer.textContent = firstnumber - secondnumber;
+    }
+     if (div) {
+       answer.textContent = firstnumber / secondnumber;
+    }
+}
+
+
+
+
 
 
 
