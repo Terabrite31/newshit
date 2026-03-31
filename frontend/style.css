@@ -19,10 +19,24 @@ body {
     background-color: rgba(255, 255, 255, 0.95);
     width: 270px;
     height: 80px;
-    position: absolute;
+    position: relative;
     top: 100px;
     left: 20px;
     border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0px;
+
+}
+
+.Text {
+    color: rgb(81, 71, 71);
+    font-size: 50px;
+    font-weight: 50px;
+    
+    border-radius: 20px;
+    
 
 }
 
@@ -137,35 +151,20 @@ body {
       width: 60px;
     height: 60px;
     position: absolute;
-    margin-top: 410px;
-    margin-left: 90px;
+    top: 410px;
+    left: 90px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-#Text {
- width: 60px;
-    color: white;
-    font-size: 50px;
-    position: absolute;
-    top: 10px;
-    font-weight: 50px;
-    margin-top: 30px;
-    margin-right: -0px;
-    border-radius: 20px;
-    
 
-}
 
-#Text2 {
- width: 60px;
-    color: white;
+.Text2 {
+ 
+    color: rgb(81, 71, 71);
     font-size: 50px;
-    position: absolute;
-    top: 10px;
+
     font-weight: 50px;
-    margin-top: 120px;
-    margin-right: -0px;
 
     border-radius: 20px;
 
@@ -234,15 +233,11 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-#showoperator {
-    width: 60px;
-    color: white;
+.showoperator {
+   
+    color: rgb(81, 71, 71);
     font-size: 50px;
-    position: absolute;
-    top: 10px;
     font-weight: 50px;
-    margin-top: 70px;
-    margin-right: -0px;
 
     border-radius: 20px;
 

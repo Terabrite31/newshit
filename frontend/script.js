@@ -1,4 +1,4 @@
-let text = document.getElementById("Text");
+let text = document.querySelector(".Text");
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
 let btn3 = document.getElementById("btn3");
@@ -8,10 +8,11 @@ let btn6 = document.getElementById("btn6");
 let btn7 = document.getElementById("btn7");
 let btn8 = document.getElementById("btn8");
 let btn9 = document.getElementById("btn9");
+let btn0 = document.getElementById("btn0");
 let btndel = document.getElementById("btn-");
 let btnx = document.getElementById("btnx");
-let text2 = document.getElementById("Text2");
-let showoperator = document.getElementById("showoperator");
+let text2 = document.querySelector(".Text2");
+let showoperator = document.querySelector(".showoperator");
 
 let firstnumber = "";
 let secondnumber = "";
@@ -95,6 +96,16 @@ btn9.onclick = function() {
     text.textContent = firstnumber;
     } else {
         secondnumber+=9;
+        text2.textContent = secondnumber;
+    }
+}
+
+btn0.onclick = function() {
+    if (operator == false) {
+    firstnumber+=0;
+    text.textContent = firstnumber;
+    } else {
+        secondnumber+=0;
         text2.textContent = secondnumber;
     }
 }
