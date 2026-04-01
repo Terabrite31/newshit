@@ -148,6 +148,7 @@ btndiv.onclick = function() {
 }
 
 btndel.onclick = function() {
+    answer.textContent = "";
    if (secondnumber == "") {
     operator = false;
    }
@@ -175,6 +176,9 @@ btneq.onclick = function() {
 
        if (plus) {
        answer.textContent = firstnumber + secondnumber;
+       if (answer.textContent == "2") {
+        answer.textContent = "franc the goat";
+       }
     }
        if (min) {
        answer.textContent = firstnumber - secondnumber;
@@ -182,6 +186,9 @@ btneq.onclick = function() {
      if (div) {
        answer.textContent = firstnumber / secondnumber;
     }
+
+    firstnumber = firstnumber.toString();
+    secondnumber = secondnumber.toString();
 }
 
 
