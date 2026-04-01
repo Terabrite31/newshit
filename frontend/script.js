@@ -172,6 +172,7 @@ btneq.onclick = function() {
     secondnumber = Number(secondnumber);
   
     if (x) {
+        name.textContent = "";
        answer.textContent = firstnumber * secondnumber;
         if (answer.textContent == "2") {
         name.textContent = "franc the goat";
@@ -183,6 +184,7 @@ btneq.onclick = function() {
     }
 
        if (plus) {
+        name.textContent = "";
        answer.textContent = firstnumber + secondnumber;
        if (answer.textContent == "2") {
         name.textContent = "franc the goat";
@@ -193,6 +195,7 @@ btneq.onclick = function() {
        }
     }
        if (min) {
+        name.textContent = "";
        answer.textContent = firstnumber - secondnumber;
         if (answer.textContent == "2") {
         name.textContent = "franc the goat";
@@ -203,6 +206,7 @@ btneq.onclick = function() {
        }
     }
      if (div) {
+        name.textContent = "";
        answer.textContent = firstnumber / secondnumber;
         if (answer.textContent == "2") {
         name.textContent = "franc the goat";
