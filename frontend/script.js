@@ -179,6 +179,10 @@ btneq.onclick = function() {
        if (answer.textContent == "2") {
         answer.textContent = "franc the goat";
        }
+
+       if (answer.textContent == "4") {
+        answer.textContent = "KURT THE GOAT";
+       }
     }
        if (min) {
        answer.textContent = firstnumber - secondnumber;
