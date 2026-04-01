@@ -18,6 +18,7 @@ let text2 = document.querySelector(".Text2");
 let showoperator = document.querySelector(".showoperator");
 let btneq = document.getElementById("btneq");
 let answer = document.getElementById("answer");
+let name = document.getElementById("name");
 
 
 let firstnumber = "";
@@ -172,23 +173,44 @@ btneq.onclick = function() {
   
     if (x) {
        answer.textContent = firstnumber * secondnumber;
+        if (answer.textContent == "2") {
+        name.textContent = "franc the goat";
+       }
+
+       if (answer.textContent == "4") {
+        name.textContent = "KURT THE GOAT";
+       }
     }
 
        if (plus) {
        answer.textContent = firstnumber + secondnumber;
        if (answer.textContent == "2") {
-        answer.textContent = "franc the goat";
+        name.textContent = "franc the goat";
        }
 
        if (answer.textContent == "4") {
-        answer.textContent = "KURT THE GOAT";
+        name.textContent = "KURT THE GOAT";
        }
     }
        if (min) {
        answer.textContent = firstnumber - secondnumber;
+        if (answer.textContent == "2") {
+        name.textContent = "franc the goat";
+       }
+
+       if (answer.textContent == "4") {
+        name.textContent = "KURT THE GOAT";
+       }
     }
      if (div) {
        answer.textContent = firstnumber / secondnumber;
+        if (answer.textContent == "2") {
+        name.textContent = "franc the goat";
+       }
+
+       if (answer.textContent == "4") {
+        name.textContent = "KURT THE GOAT";
+       }
     }
 
     firstnumber = firstnumber.toString();
